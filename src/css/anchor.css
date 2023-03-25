@@ -1,0 +1,32 @@
+.anchorActive{
+    width: 4%;
+    z-index: 1000;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    border-radius: 50%;
+    background: #292929;
+    transition: all 0.3s ease-in-out;
+}
+.anchorActive img{
+    padding: 0px;
+    margin: 0;
+}
+.anchorActive:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.anchorInactive{
+    display: none;
+}
+
+@media (max-width: 500px){
+    .anchorActive{
+        width: 15%;
+        /* transform: scale(1); */
+        -webkit-tap-highlight-color: transparent;
+    }
+    .anchorActive:hover{
+        transform: scale(1);
+    }
+}
