@@ -20,14 +20,7 @@ const Navigation = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    var queries = "";
-
-    if (query == "") {
-      queries = "nature";
-    } else {
-      queries = query.split(" ").join("+");
-    }
-
+    var queries = query == "" ? "nature" : query.split(" ").join("+");
     history.push(`/search/${queries}`);
   };
 
@@ -68,7 +61,11 @@ const Navigation = () => {
           <div className="nav-extra w-1/4 flex justify-center">
             <ul className="flex">
               {/* <li id='nav-list' className='text-gray-300 tracking-widest'><a href="#bottom">  Contact </a></li> */}
-              <li id="nav-list" className="text-gray-300 ml-12 tracking-widest">
+              <li
+                id="nav-list"
+                className="text-gray-300 ml-12 tracking-widest cursor-pointer"
+                onClick={() => history.push("/about")}
+              >
                 About
               </li>
             </ul>

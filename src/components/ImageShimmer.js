@@ -1,20 +1,19 @@
-import "../css/Shimmer.css"
-
+import "../css/Shimmer.css";
 
 const ImageShimmer = () => {
-  return(
+  return (
     <>
-    {/* <div className="shimmer-main"> */}
+      {/* <div className="shimmer-main"> */}
       {/* <div className="shimmer-hero"> */}
       <div className="shimmer-card">
         <div className="shimmer-ani">
-          <div className="shimmer"></div>
+          <div className="shimmer"> this is good</div>
         </div>
       </div>
       {/* </div> */}
-    {/* </div> */}
+      {/* </div> */}
     </>
-  )
+  );
 };
 
 export default ImageShimmer;
